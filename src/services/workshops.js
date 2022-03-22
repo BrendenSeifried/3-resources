@@ -1,6 +1,10 @@
-import { client, checkError } from './client';
-
 export async function fetchWorkshops() {
-  const response = await client.from('workshops').select('*');
-  return checkError(response);
+  const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/workshops?`, {
+    headers: {
+      apikey: process.env.REACT_APP_SUPABASE_KEY,
+      Authorization: `Bearer ${process.env.REACT_APP_SUPABASE_KEY}`,
+    },
+  });
+  const data = await resp.json();
+  return data;
 }
