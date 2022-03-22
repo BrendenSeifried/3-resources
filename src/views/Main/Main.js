@@ -1,29 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 
 export default function Main() {
   return (
-    <div className='nameofstuff'>
+    <div className='landingpage'>
 
-      <NavLink exact to = '/bulletboard'>
-        <h1>BulletBoard</h1>
-      </NavLink>
-
-      <NavLink exact to = '/workshops'>
-        <h1>WorkShops</h1>
-      </NavLink>
-
+      <h1> Hey! Its a list of random stuff! </h1>
       
-      
-      {/* <NavLink exact to = {'/characters'}>
-        <h1>Characters</h1>
-      </NavLink>
-
-      
-      <NavLink exact to = {'/films'}>
-        <h1>Films</h1>
-      </NavLink> */}
     </div>
    
   );
