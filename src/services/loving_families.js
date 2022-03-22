@@ -6,6 +6,5 @@ export async function fetchLovingFamilies() {
     },
   });
   const data = await response.json();
-  console.log(data);
   return data;
 }
