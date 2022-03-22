@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { fetchLovingFamilies } from '../../services/loving_families';
 
+import './families.css';
+
 export default function LovingFamilies() {
   const [families, setFamilies] = useState([]);
   useEffect(()=> {
@@ -12,7 +14,7 @@ export default function LovingFamilies() {
   }, []);
 
   return (
-    <h1>Loving Families that I stalk:
+    <h1>Cool Families that I stalk on the weekends:
       {families.map((data)=> (
         <div className='families' key={data.id}>
           <p>{data.name}</p>

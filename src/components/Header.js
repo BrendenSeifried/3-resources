@@ -1,24 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './header.css';
 
 
 export default function SelectionBar() {
   return (
-    <div className='nameofstuff'>
+    <div className='navlinkdiv'>
 
-      <NavLink exact to = '/'>
+      <NavLink className='nav' exact to = '/'>
         <h1>Home</h1>
       </NavLink>
 
-      <NavLink exact to = '/bulletboard'>
+      <NavLink className='nav' exact to = '/bulletboard'>
         <h1>BulletBoard</h1>
       </NavLink>
 
-      <NavLink exact to = '/workshops'>
+      <NavLink className='nav' exact to = '/workshops'>
         <h1>WorkShops</h1>
       </NavLink>
 
-      <NavLink exact to = '/loving_families'>
+      <NavLink className='nav' exact to = '/loving_families'>
         <h1>Stalked Families</h1>
       </NavLink>
       

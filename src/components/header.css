@@ -1,0 +1,15 @@
+.navlinkdiv{
+ font-style: italic;
+ font-size:x-small;
+ font-weight: bold;
+ display: flex;
+ flex-direction: row;
+ /* border: 2px, bold, black */
+ 
+}
+
+.nav{
+    padding: 5px 20px;
+    border: 4px ridge rgb(68, 5, 5);
+    background-color: rgba(128, 128, 128, 0.712);
+}

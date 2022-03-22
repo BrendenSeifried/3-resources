@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchWorkshops } from '../../services/workshops';
+import './work.css';
 
 export default function WorkShops() {
   const [workShops, setWorkshops] = useState([]);
@@ -13,12 +14,12 @@ export default function WorkShops() {
   }, []);
     
   return (
-    <div>WorkShops:
+    <h1 className='top'>WorkShops:
       {workShops.map((data)=> (
         <div className='workshops' key={data.id}>
-          <h1>{data.wname}</h1>
+          <p>{data.wname}</p>
         </div>
       ))}
-    </div>
+    </h1>
   );
 }

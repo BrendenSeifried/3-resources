@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchBulletBoard } from '../../services/bulletboard';
+import './bullet.css';
 
 import SelectByName from '../../components/SelectByName';
 
@@ -16,12 +17,12 @@ export default function BulletBoard() {
   }, [name]);
     
   return (
-    <div> <SelectByName setName={setName}/>BulletBoard:
+    <div className='head'> <SelectByName setName={setName}/>BulletBoard:
       {bullet.map((data)=> (
         <div className='bulletboard' key={data.id}>
-          <h3>{data.name}</h3>
-          <p>Date Posted: {data.date}</p>
-          <p>{data.info}</p>
+          <h3 className='post'>{data.name}</h3>
+          <p className='post'>Date Posted: {data.date}</p>
+          <p className='post'>{data.info}</p>
         </div>
       ))}
     </div>
