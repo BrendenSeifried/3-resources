@@ -6,10 +6,15 @@ export default function Main() {
   return (
     <div className='nameofstuff'>
 
-      <NavLink exact to = {'/workshops'}>
+      <NavLink exact to = '/bulletboard'>
+        <h1>BulletBoard</h1>
+      </NavLink>
+
+      <NavLink exact to = '/workshops'>
         <h1>WorkShops</h1>
       </NavLink>
 
+    
       
       {/* <NavLink exact to = {'/characters'}>
         <h1>Characters</h1>

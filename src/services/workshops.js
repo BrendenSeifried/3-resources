@@ -6,5 +6,6 @@ export async function fetchWorkshops() {
     },
   });
   const data = await resp.json();
+  console.log(data);
   return data;
 }
