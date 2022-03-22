@@ -14,7 +14,7 @@ export default function Main() {
         <h1>WorkShops</h1>
       </NavLink>
 
-    
+      
       
       {/* <NavLink exact to = {'/characters'}>
         <h1>Characters</h1>

@@ -1,7 +1,8 @@
-import Main from './views/Main/Main';
 import './App.css';
-import WorkShops from './views/Workshops/Workshops';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+import Main from './views/Main/Main';
+import WorkShops from './views/Workshops/Workshops';
 import BulletBoard from './views/BulletBoard/BulletBoard';
 
 function App() {
