@@ -1,0 +1,22 @@
+.bulletboard {
+    /* font-size: smaller; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: bisque;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+/* .head{
+        background-color: rgba(136, 34, 34, 0.466);
+        /* display: flex;
+        justify-content: center;} */
+
+.test{
+    border: 2px bold black;
+}

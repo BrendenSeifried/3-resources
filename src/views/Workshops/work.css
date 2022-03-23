@@ -1,0 +1,12 @@
+.workshops {
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.top{
+        display: flex;
+        flex-direction: row;
+        
+}
