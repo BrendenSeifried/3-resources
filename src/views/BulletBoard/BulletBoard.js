@@ -17,12 +17,17 @@ export default function BulletBoard() {
   }, [name]);
     
   return (
-    <div className='head'> <SelectByName setName={setName}/>BulletBoard:
+    <div > 
+      <SelectByName className='selection'setName={setName}/>BulletBoard:
+
+
       {bullet.map((data)=> (
         <div className='bulletboard' key={data.id}>
-          <h3 className='post'>{data.name}</h3>
-          <p className='post'>Date Posted: {data.date}</p>
-          <p className='post'>{data.info}</p>
+          <div className='test' style={{ border: 'solid', bordercolor: 'black', backgroundColor: 'yellow', width:'fit-content' }}>
+            <h3 className='post'>{data.name}</h3>
+            <p className='post'>Date Posted: {data.date}</p>
+            <p className='post'>{data.info}</p>
+          </div>
         </div>
       ))}
     </div>

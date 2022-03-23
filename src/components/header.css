@@ -4,6 +4,7 @@
  font-weight: bold;
  display: flex;
  flex-direction: row;
+ justify-content: center;
  /* border: 2px, bold, black */
  
 }
@@ -12,4 +13,12 @@
     padding: 5px 20px;
     border: 4px ridge rgb(68, 5, 5);
     background-color: rgba(128, 128, 128, 0.712);
+}
+
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+
 }

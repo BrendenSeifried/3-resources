@@ -1,8 +1,9 @@
 import React from 'react';
+import './header.css';
 
 export default function SelectByName({ setName }) {
   return (
-    <div>
+    <div className='selection'>
       <select onChange={(e)=>setName(e.target.value)}>
         <option value="All">All</option>
         <option value="Bren">Bren</option>
